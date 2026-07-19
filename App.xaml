@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:DotNetShortcut"
              StartupUri="Source/View/MainWindow.xaml">
     <Application.Resources>
-         
+    
     </Application.Resources>
 </Application>
