@@ -6,38 +6,39 @@
         xmlns:local="clr-namespace:DotNetShortcut"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="CurveStyle" TargetType="Label">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Label">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="18">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
 
-        <Style x:Key="CurveStyleButton" TargetType="Button">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="18"
-                                Padding="2">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
+        <Window.Resources>
+            <Style x:Key="CurveStyle" TargetType="Label">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Label">
+                            <Border Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="18">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+    
+            <Style x:Key="CurveStyleButton" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="18"
+                                    Padding="5">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Window.Resources>
 
     <Window.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -46,6 +47,7 @@
         </LinearGradientBrush>
     </Window.Background>
 
+    <Canvas x:Name="canvasRoot" Background="Transparent">
         <Canvas VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Transparent">
             <Label Content="DotNet Shorcut" Canvas.Left="280" Canvas.Top="20" Foreground="Black" 
             FontSize="24pt" HorizontalContentAlignment="Center" Width="240" Background="Transparent"
@@ -57,7 +59,8 @@
             <TextBox Canvas.Top="100" Canvas.Left="275" FontSize="12pt" Width="250" BorderBrush="Black" BorderThickness="1"
             Background="#e2e2e2" x:Name="ShowDirectory"/>
 
-            <Button Content="Escolher diretório" FontSize="12pt" Canvas.Top="98" Canvas.Left="533" Style="{StaticResource CurveStyleButton}"
+            <Button Content="Escolher diretório" FontSize="12pt" Canvas.Top="95" Canvas.Left="530" Style="{StaticResource CurveStyleButton}"
             Background="#e2e2e2" Click="ChooseFolder"/>
         </Canvas>
+</Canvas>
 </Window>
