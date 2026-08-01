@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotNetShortcut")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+349112ef0a9c0fae854d00be308a9202d647f700")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7256d91d4fdf2b55ccbcef822b9f030b747167ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotNetShortcut")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotNetShortcut")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

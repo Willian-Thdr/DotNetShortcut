@@ -48,7 +48,7 @@
     </Window.Background>
 
     <Canvas x:Name="canvasRoot" Background="Transparent">
-        <Canvas VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Transparent">
+        <Canvas Height="120" HorizontalAlignment="Stretch" Background="Transparent">
             <Label Content="DotNet Shorcut" Canvas.Left="280" Canvas.Top="20" Foreground="Black" 
             FontSize="24pt" HorizontalContentAlignment="Center" Width="240" Background="Transparent"
             Style="{StaticResource CurveStyle}"/>
@@ -59,8 +59,16 @@
             <TextBox Canvas.Top="100" Canvas.Left="275" FontSize="12pt" Width="250" BorderBrush="Black" BorderThickness="1"
             Background="#e2e2e2" x:Name="ShowDirectory"/>
 
-            <Button Content="Escolher diretório" FontSize="12pt" Canvas.Top="95" Canvas.Left="530" Style="{StaticResource CurveStyleButton}"
+            <Button Content="Escolher diretório"  Canvas.Top="95" FontSize="12pt" Canvas.Left="530" Style="{StaticResource CurveStyleButton}"
             Background="#e2e2e2" Click="ChooseFolder"/>
         </Canvas>
-</Canvas>
+
+        <Canvas x:Name="wpfApplicationConfig" Canvas.Top="120" Height="330">
+            <Button Content="Compilar código" Canvas.Left="50" Canvas.Top="20" FontSize="12pt" Style="{StaticResource CurveStyleButton}"
+            Click="CompileProcess"/>
+
+            <Button Content="Rodar código" Canvas.Left="200" Canvas.Top="20" FontSize="12pt" Style="{StaticResource CurveStyleButton}"
+            Click="RunProcess"/>
+        </Canvas>
+    </Canvas>
 </Window>
